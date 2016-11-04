@@ -176,7 +176,7 @@ def store_ranks_in_database(ranks):
     
 
 
-crawl_web('http://www.biarca.io',2)
+crawl_web('http://www.google.com',1)# providing url and depth to search
 
 
 print "process completed"
