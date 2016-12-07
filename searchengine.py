@@ -137,12 +137,10 @@ def store_index_in_database(ind):
             #print "hi"
             stt=""
             for i in ind[indi]:
-            
                 stt=stt+" "+i
             cursor.execute("INSERT INTO Search_Engine (keyword,Url_list) VALUES (?, ?)",
                   (indi,stt))
-        else:
-                        
+        else:                    
             get_str=str(url_ind)#cursor.fetchone())
             db_l=get_str[3:len(get_str)-3].split()
             #print db_l

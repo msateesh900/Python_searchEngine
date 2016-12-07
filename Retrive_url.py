@@ -16,9 +16,9 @@ def lucky_search(urls,ranks):
 
 key1 = raw_input("Enter keyword to search:")
 import re
+keys=key1.lower().split()
 keys = re.findall(r"[\w]+",key1)
 print keys
-#keys=key1.lower().split()
 import sqlite3
 
 db_filename = 'Search_engine.db'
